@@ -11,9 +11,5 @@ class ApplicationModule {
 
     @Provides
     @Singleton
-    internal fun provideApplication(application: Application): Application = application
-
-    @Provides
-    @Singleton
     internal fun provideContext(application: Application): Context = application
 }
